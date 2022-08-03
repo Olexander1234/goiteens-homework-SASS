@@ -1,6 +1,4 @@
-{
-    "liveServer.settings.port": 5501
-}
+
 {
     "liveSassCompile.settings.formats":[
        {
@@ -20,6 +18,6 @@
    ],
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": [
-       "defaults"
+    "defaults"
    ]
 }
