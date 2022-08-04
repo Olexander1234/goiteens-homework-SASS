@@ -5,12 +5,12 @@
     
  }
  .social-link{
-     color: #AFB1B8;
+  color: var( --svg-color);
  }
  .social-link:hover
  {
-   color:#FFFFFF;
-   background-color:#2196F3;
+  color: var(--white-color);
+   background-color: var( --blue-color); 
  }
  
  
@@ -18,11 +18,11 @@
  
  .join .social-link{
      background-color: rgba(255, 255, 255, 0.1); /* #2f303a */
-     color: #F5F4FA;
+     color: var(--bacround-button);
    }
  .join .social-link:hover,
  .join .social-link:focus{
- background-color: #2196F3;
+ background-color:  var( --blue-color); 
  
  
  }
@@ -33,7 +33,7 @@
      justify-content: center;
  }
  .join-networks{
-     color: #F5F4FA;
+  color: var(--bacround-button);
      
      font-size: 14px;
      line-height: 1.2;
@@ -69,6 +69,6 @@
  .social-link:hover,
  .social-link:focus
  {
-   background-color: #2196F3;
-   fill: #FFFFFF;
+   background-color: var( --blue-color); 
+   color: var(--white-color);
  }

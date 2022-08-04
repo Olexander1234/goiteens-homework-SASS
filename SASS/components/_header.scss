@@ -19,21 +19,18 @@ letter-spacing: 0.03em
 .logo-span{ 
 color: #2196F3;
 }  
-.nav-list{
-    display: flex;
-    margin-left: 93px;
 
-}
 /* Шапка */
 .header-nav{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    & li + li{
+        margin-left: 30px;
+    }
     
-}
-.header-nav li + li{
-    margin-left: 30px;
-}
+} 
+
 
 
 .link-item{
@@ -47,27 +44,42 @@ font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
-}
-.link-item:hover{
+&:hover{
     color: #2196F3;
+}
 }
 
+
 .link-list{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+    @include centeredFlex (flex-start);
     margin-left: auto;
+    & li + li{
+        margin-left: 50px;
+    }
     
 }
-.link-list li + li{
-    margin-left: 50px;
-}
-.contact:hover{
-    color: #2196F3;
-   
-}
+
+
 .contact{
     fill: currentColor;
+    &:hover{
+        color: #2196F3;
+       
+    }
+    &{
+        margin-right: 10px;
+      
+        margin-left: -20px;
+        
+    
+    }
+    &:hover{
+        color: #2196F3;
+    }
+    
 }
 .link-king{ 
     color: #757575;
@@ -79,23 +91,18 @@ letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    &:hover{
+        color: #2196F3;
+        
+     }
 
 }
-.link-king:hover{
-   color: #2196F3;
-   
-}
-.contact{
-    margin-right: 10px;
-  
-    margin-left: -20px;
-    
+.nav-list{
+    display: flex;
+    margin-left: 93px;
 
 }
 
-.contact:hover{
-    color: #2196F3;
-}
 .nav-list link{
     padding-top: 32px;
     padding-bottom: 32px;

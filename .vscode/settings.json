@@ -18,6 +18,8 @@
    ],
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": [
-    "defaults"
+    "< 1%",
+    "last 2 versions"
+
    ]
 }

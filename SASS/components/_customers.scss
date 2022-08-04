@@ -3,7 +3,6 @@
     display: flex;
 }
 
-.kvadrat{
 
   
     
@@ -11,10 +10,10 @@
   
     
     
-}
+
 .icons-klient:hover{
-    border: 1px solid #2196F3;
-    color: #2196F3;
+    border: 1px solid var( --blue-color);
+    color: var( --blue-color);
 }
 .cust-icon{
    
@@ -22,7 +21,7 @@
   
 }
 .cust-icon:hover{
-    fill: #2196F3;
+    fill: var( --blue-color);
 }
 .icons-klient{
     width: 170px;
@@ -30,14 +29,12 @@
     left: 215px;
     top: 2493px;
     
-    border: 1px solid #AFB1B8;
+    border: 1px solid  var( --svg-color);
     border-radius: 4px;
     margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include centeredFlex (center);
   
-    color: #AFB1B8;
+    color: var( --svg-color);
 }
 
 

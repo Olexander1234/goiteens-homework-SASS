@@ -12,6 +12,10 @@
 
 
     transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
   .modal{
     position: absolute;
@@ -21,17 +25,19 @@
 
     width: 528px;
     height: 581px;
-padding: 40px;
-    background-color: #F5F4FA;
+    padding: 40px;
+    background-color: var(--bacround-button);
 
 transform: translate(-50%, -50%) scale(1);
-transition: transdorm 500ms cubic-bezier(0.4, 0, 0.2, 1);;
+transition: transdorm 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+ .backdrop .is-hidden &{
+  transform:  translate(-50%, -50%) scale(0.7);
+}
 
   }
-  .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+  
   .modal-button{
     position: absolute;
     top: 8px;
@@ -49,6 +55,4 @@ transition: transdorm 500ms cubic-bezier(0.4, 0, 0.2, 1);;
 
 
   }
-  .backdrop .is-hidden .modal{
-    transform:  translate(-50%, -50%) scale(0.7);
-  }
+ 
